@@ -2,26 +2,60 @@
 import Layout from '../layouts/Layout.astro';
 import Partners from "../components/Partner.svelte";
 import Speakers from "../components/Speakers.svelte";
+import Navbar from "../components/Navbar.astro";
 
 ---
 <Layout>
+    <Navbar></Navbar>
 
 
 
 <main>
-    <div class="hero full-height jarallax" data-jarallax-video="https://www.youtube.com/watch?v=N0Rlcpa321M" data-speed="0.2">
+    <div class="hero full-height jarallax" data-jarallax data-speed="0.2">
+		<div class="absolute z-[1] w-full h-full top-0 left-0 bg-black bg-opacity-50"></div>
+
+        <img class="" src="/img/072A7502.jpeg" alt="">
+        <div class="wrapper opacity-mask d-flex align-items-center justify-content-center text-center animate_hero" data-opacity-mask="rgba(0, 0, 0, 0.5)">
+            <div class="container mx-auto">
+                <h6 class="slide-animated  text-rose-700 text-lg ">#LEADING FROM THE FRONT</h6>
+                <div class="pb-7">
+                    <h6  class="slide-animated  sm:text-7xl text-4xl text-[#52ffff] font-bold">WOMEN STARTUP SUMMIT 5.0</h6>
+                    <small class="slide-animated one">The Biggest Gathering of Women Entrepreneur</small>
+                </div>
+                <div class="row justify-content-center slide-animated three">
+                    <h6 class="text-white text-xl font-semibold uppercase">29<sup>th</sup> SEPTEMBER 2023 | Digital Hub, KOCHI</h6>
+                 </div>
+                <div class="flex mx-auto justify-center items-center text-center sm:flex-row flex-col space-x-2">
+                    <div class="owl-slide-animated owl-slide-title-3"><a class="btn_1 outline white mt-3 cursor-pointer" onclick="popup('women-startup-summit-2023-312203');">Book Tickets</a></div>
+
+                    <div class="owl-slide-animated owl-slide-title-3"><a class="btn_1 outline white mt-3" href="#first_section">Shelovestech India 2023</a></div>
+
+                </div>
+                
+            </div>
+            <div class="mouse_wp slide-animated four">
+                <a href="#first_section" class="btn_scrollto">
+                    <div class="mouse"></div>
+                </a>
+            </div>
+            <!-- / mouse -->
+        </div>
+    </div>
+
+
+    <!-- <div class="hero full-height jarallax" data-jarallax-video="https://www.youtube.com/watch?v=N0Rlcpa321M" data-speed="0.2">
         <div class="wrapper opacity-mask d-flex align-items-center justify-content-center text-center animate_hero" data-opacity-mask="rgba(0, 0, 0, 0.5)">
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-8 items-start text-start">
                         <div class="slide-text white">
-                            <small class="slide-animated  text-rose-500 ">#LEADING FROM THE FRONT</small>
-                            <div class="py-7">
+                            <h6 class="slide-animated  text-rose-500 text-lg ">#LEADING FROM THE FRONT</h6>
+                            <div class="pb-7">
                                 <h6  class="slide-animated  sm:text-7xl text-4xl text-[#52ffff] font-bold">WOMEN STARTUP SUMMIT 5.0</h6>
                                 <small class="slide-animated one">The Biggest Gathering of Women Entrepreneur</small>
                             </div>
                             <div class="row justify-content-center slide-animated three">
-                                <h6 class="text-white text-xl font-semibold">SEPTEMBER 29 2023 | KERALA STARTUP MISSION, KOCHI</h6>
+                                <h6 class="text-white text-xl font-semibold uppercase">29<sup>th</sup> SEPTEMBER 2023 | Digital Hub, KOCHI</h6>
                              </div>
                             <div class="flex sm:flex-row flex-col space-x-2">
                                 <div class="owl-slide-animated owl-slide-title-3"><a class="btn_1 outline white mt-3 cursor-pointer" onclick="popup('women-startup-summit-2023-312203');">Book Tickets</a></div>
@@ -40,9 +74,9 @@ import Speakers from "../components/Speakers.svelte";
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="pattern_2 bg-[#ff005a] py-32">
+    <!-- <div class="pattern_2 bg-[#ff005a] py-32">
         <div class="container  " id="first_section">
             <div class="row justify-center flex-lg-row-reverse align-items-center text-center">
               
@@ -50,7 +84,9 @@ import Speakers from "../components/Speakers.svelte";
                     <div class="intro">
                         <div class="title">
                             <p class=" text-white font-semibold text-sm uppercase py-6">About</p>
-                            <p class="text-2xl uppercase text-white">A celebration of women leaders, entrepreneurs, and innovators! Building on the success of last year's event, the 5th edition promises to be even more inspiring, enabling and impactful by providing a platform for knowledge sharing, networking and celebrating the achievements of women.</p>
+                            <p class="text-2xl uppercase text-white">
+                                A celebration of women leaders, entrepreneurs, and innovators! Building on the success of last year's event, the 5th edition promises to be even more inspiring, enabling and impactful by providing a platform for knowledge sharing, networking and celebrating the achievements of women.
+                            </p>
                         </div>
                        
                     </div>
@@ -59,7 +95,7 @@ import Speakers from "../components/Speakers.svelte";
             
         </div>
         
-    </div>
+    </div> -->
 
 
     <div class="container margin_120_95">
@@ -68,8 +104,8 @@ import Speakers from "../components/Speakers.svelte";
                 <div class="title">
                     <small>#LEADING FROM THE FRONT</small>
                     <h2>WSS 2023</h2>
-                    <p class="lead">
-                        Join us at the much-awaited KSUM Women Summit 2023, a celebration of women leaders, entrepreneurs, and innovators! Building on the success of last year's event, this year's summit promises to be even more inspiring, empowering, and impactful. This empowering event celebrates the achievements of women leaders, innovators, and entrepreneurs while providing a platform for knowledge sharing, networking, and inspiration.
+                    <p class="lead text-justify">
+                        A celebration of women leaders, entrepreneurs, and innovators! Building on the success of last year's event, the 5th edition promises to be even more inspiring, enabling and impactful by providing a platform for knowledge sharing, networking and celebrating the achievements of women.
                     </p>
                     <p> <a href="#booking_section" class="btn_4 learn-more btn_scrollto">
                             <span class="circle">
@@ -90,7 +126,7 @@ import Speakers from "../components/Speakers.svelte";
                     <!-- /carousel -->
                     <div class="box_item_info" data-jarallax-element="-30">
                         <h2>INSPIRING KEYNOTES</h2>
-                        <p>
+                        <p class=" text-justify">
                             Renowned Women Leaders And Industry Experts Deliver Insightful Keynote Speeches, Sharing Their Experiences, Challenges, And Success Stories. Their Inspiring Talks Serve As A Catalyst For Personal And Professional Growth.
                         </p>
                       
@@ -108,7 +144,7 @@ import Speakers from "../components/Speakers.svelte";
                     <!-- /carousel -->
                     <div class="box_item_info" data-jarallax-element="-30">
                         <h2>PANEL DISCUSSIONS</h2>
-                        <p>
+                        <p class=" text-justify">
                             Engaging Panel Discussions Provide A Platform For Thought-Provoking Conversations On Topics Such As Women In Tech, Entrepreneurship, Leadership, And Innovation. Experts, Entrepreneurs, And Industry Leaders Share Their Expertise, Insights, And Strategies.                        </p>
                        
                     </div>
@@ -125,7 +161,7 @@ import Speakers from "../components/Speakers.svelte";
                     <!-- /carousel -->
                     <div class="box_item_info" data-jarallax-element="-30">
                         <h2>KNOWLEDGE-SHARING WORKSHOPS</h2>
-                        <p>
+                        <p class=" text-justify">
                             The Summit Offers Interactive Workshops That Equip Participants With Practical Skills, Tools, And Knowledge. These Workshops Cover A Wide Range Of Topics, Including Business Development, Technology Trends, Funding Opportunities, And Personal Development.                        </p>
                        
                     </div>
@@ -142,7 +178,7 @@ import Speakers from "../components/Speakers.svelte";
                     <!-- /carousel -->
                     <div class="box_item_info" data-jarallax-element="-30">
                         <h2>NETWORKING OPPORTUNITIES</h2>
-                        <p>
+                        <p class=" text-justify">
                             The Women Summit Provides Ample Opportunities For Networking And Building Meaningful Connections. Participants Can Engage With Fellow Attendees, Speakers, Investors, And Mentors, Fostering Collaborations And Potential Partnerships.                        </p>
                        
                     </div>
@@ -160,7 +196,7 @@ import Speakers from "../components/Speakers.svelte";
                     <!-- /carousel -->
                     <div class="box_item_info" data-jarallax-element="-30">
                         <h2>SHOWCASING WOMEN-LED STARTUPS</h2>
-                        <p>
+                        <p class=" text-justify">
                             The Summit Offers A Platform For Women-Led Startups To Showcase Their Innovative Products, Services, And Ideas. This Exposure Helps Them Gain Visibility, Connect With Potential Customers And Investors, And Accelerate Their Growth.
                                                 </p>
                        
@@ -179,7 +215,7 @@ import Speakers from "../components/Speakers.svelte";
                     <!-- /carousel -->
                     <div class="box_item_info" data-jarallax-element="-30">
                         <h2>SUPPORTIVE COMMUNITY</h2>
-                        <p>
+                        <p class=" text-justify">
                             The Women Summit Fosters A Supportive Community That Continues Beyond The Event Itself. Participants Have Access To Ongoing Mentorship, Networking Opportunities, And Support From KSUM And Its Ecosystem Partners.
                           </p>
                        
@@ -254,7 +290,7 @@ import Speakers from "../components/Speakers.svelte";
                 <div class="col-lg-6">
                     <div class="pinned-image rounded_container pinned-image--small mb-4">
                         <div class="pinned-image__container">
-                            <img src="/img/tr1 1.png" alt="">
+                            <img src="/img/bootcamp.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -262,8 +298,10 @@ import Speakers from "../components/Speakers.svelte";
                     <div class="title">
                         <small>Pre-Event WSS2023</small>
                         <h3>VentureHer</h3>
-                        <p>
-                            BUILDING WOMEN-LED STARTUPS FOR IMPACT BOOTCAMP OFFERS A COMPREHENSIVE PROGRAM THAT INCLUDES SESSIONS ON PITCHING, STORYTELLING, AND HANDS-ON ACTIVITIES.
+                        <p class=" text-justify">
+                            Building Women-Led Startups for Impact Bootcamp offers a comprehensive program that includes sessions on pitching, storytelling, and hands-on activities.        </p>
+
+                            <!-- BUILDING WOMEN-LED STARTUPS FOR IMPACT BOOTCAMP OFFERS A COMPREHENSIVE PROGRAM THAT INCLUDES SESSIONS ON PITCHING, STORYTELLING, AND HANDS-ON ACTIVITIES. -->
                         </p>
                         <!-- <p><a href="about.html" class="btn_1 mt-1 outline">Read more</a></p> -->
                     </div>
@@ -274,7 +312,7 @@ import Speakers from "../components/Speakers.svelte";
                 <div class="col-lg-6 order-lg-2">
                     <div class="pinned-image rounded_container pinned-image--small mb-4">
                         <div class="pinned-image__container">
-                            <img src="/img/tr3 1.png" alt="">
+                            <img src="/img/fabher.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -282,8 +320,9 @@ import Speakers from "../components/Speakers.svelte";
                     <div class="title">
                         <small>Pre-Event WSS2023</small>
                         <h3>FabHer</h3>
-                        <p>
-                            NURTURING CREATIVITY AND INNOVATION IN WOMEN INNOVATORS”.EMPOWER WOMEN INNOVATORS IN FAB LABS WITH SKILLS, RESOURCES, AND HANDS-ON PROJECTS IN 3D PRINTING, LASER CUTTING, CNC MACHINING, AND ELECTRONICS. FOSTER COLLABORATION AND CREATIVITY, TURNING IDEAS INTO REALITY.
+                        <p class=" text-justify">
+                            <!-- NURTURING CREATIVITY AND INNOVATION IN WOMEN INNOVATORS.EMPOWER WOMEN INNOVATORS IN FAB LABS WITH SKILLS, RESOURCES, AND HANDS-ON PROJECTS IN 3D PRINTING, LASER CUTTING, CNC MACHINING, AND ELECTRONICS. FOSTER COLLABORATION AND CREATIVITY, TURNING IDEAS INTO REALITY. -->
+                            Nurturing Creativity and Innovation in Women Innovators”.Empower women innovators in Fab Labs with skills, resources, and hands-on projects in 3D printing, laser cutting, CNC machining, and electronics. Foster collaboration and creativity, turning ideas into reality.        </p>
 
                         </p>
                         <!-- <p><a href="about.html" class="btn_1 mt-1 outline">Read more</a></p> -->
@@ -295,13 +334,25 @@ import Speakers from "../components/Speakers.svelte";
         <!-- /container-->
     </div>
 
-    <section id="speakers" class="pt-20 pb-10 bg-[#1a1a1a] text-white">
+    <!-- <section id="speakers" class="pt-20 pb-10 bg-[#1a1a1a] text-white">
         <div class="">
           <div class="font-other font-bold text-4xl text-center mb-10">Our Speakers</div>
       
           <Speakers client:load/>
         </div>
-    </section>
+    </section> -->
+
+    <section id="speakers" class="px-5 py-24 bg-[#1a1a1a] text-white">
+        <div class="container relative mx-auto">
+         
+          <div class="container mx-auto">
+          <div class="font-other font-bold text-4xl text-center mb-10">Our Speakers</div>
+
+            <Speakers title="Our Speakers" label="Powerpacked speakers awaits you" category="speaker" client:load/>
+          </div>
+          
+        </div>
+      </section>
 
     <div class="container margin_120_95">
         <div class="title flex flex-col mx-auto text-center">
@@ -349,7 +400,10 @@ import Speakers from "../components/Speakers.svelte";
        
 
     </div>
-	<Partners ></Partners>
+	
+    
+    
+    <Partners ></Partners>
     
    
 
@@ -360,7 +414,7 @@ import Speakers from "../components/Speakers.svelte";
     <div class="container mx-auto">
 		<div class="flex flex-wrap">
 		  <div class="w-full md:w-1/2 bg-white border-8 border-white shadow mt-10">
-			<iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15714.13294256542!2d76.3542335!3d10.0553212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeaddd199d9bbde2b!2sKerala%20Technology%20Innovation%20Zone%20(KTIZ)!5e0!3m2!1sen!2sin!4v1655224297726!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15714.118050879268!2d76.3534851!3d10.0556274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d4e5e7503f3%3A0x946b177d3dab35e4!2sDigital%20Hub!5e0!3m2!1sen!2sin!4v1693823012013!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		  </div>
 		  <div class="w-full md:w-1/2 py-5 flex flex-col items-center justify-center">
 	
